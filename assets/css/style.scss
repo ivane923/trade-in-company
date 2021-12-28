@@ -1,0 +1,216 @@
+$primary: #2e7fec;
+$dark: #212529;
+$dark2: #485056;
+$secondary: #e9ecef;
+.bg-primary {
+    background-color: $primary !important;
+}
+.bg-secondary {
+    background-color: $secondary !important;
+}
+.badge-secondary {
+    background-color: $secondary !important;
+    border-radius: 2rem;
+}
+.text-dark {
+    color: $dark !important;
+}
+.text-dark2 {
+    color: $dark2 !important;
+}
+label {
+    font-size: 14px;
+    color: $dark2;
+    font-weight: 500;
+}
+
+.btn {
+    font-weight: 200;
+    &.export, &.import {
+        &:focus {
+            box-shadow: initial;
+            text-decoration: underline;
+        }
+    }
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 500;
+}
+table {
+    td {
+        font-size: 14px;
+        color: $dark;
+    }
+}
+
+.topbar {
+    .brand {
+        a {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    .navbar-search {
+        #btnSearch {
+            border-top-left-radius: 0.35rem;
+            border-bottom-left-radius: 0.35rem;        
+            &:focus {
+                box-shadow: initial;
+            }
+        }
+        input {
+            &:focus {
+                outline: 0;
+                box-shadow: initial;
+            }
+        }
+    }
+    .navbar-nav {
+        .nav-user {
+            .user {
+                font-size: 14px;
+            }
+        }
+    }
+        
+}
+.filters {
+    .input-group-prepend {
+        max-height: 38px;
+    }
+    .dropdown button, .input-group {
+        width: 225px;
+    }
+}
+
+.sidebar {
+    width: 20rem;
+    .sidebar-brand {
+        // background-color: $primary;
+    }
+    .nav-item {
+        .nav-link {
+            padding: .5rem 1rem;
+            // width: 100%;
+        }
+    }
+}
+
+// Devices
+
+.table {
+    thead, tfoot {
+        background-color: #e9eff7;
+        th {
+            font-weight: normal;
+            // color: $dark;
+            font-size: 14px;
+        }
+    }
+    td {
+        color: #666e74;
+        span {
+            font-size: 14px;
+            color: #666e74;
+        }
+    }
+    th {
+        color: #797f83;
+    }
+    td, th {
+        vertical-align: middle;
+        padding: 0.5rem;
+        vertical-align: middle !important;
+        .form-check {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &#customerTable {
+        tr {
+            td:nth-child(2) {
+                color: $dark;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+
+// Customer
+#customerNavBar {
+    .nav-link {
+        color: grey;
+        font-weight: 200;
+        &.active {
+            border-bottom: 2px solid rgb(39, 38, 38);
+        }
+    }
+}
+
+// Settings
+#settings {
+    .s-item {
+        transition: all .3s;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+    .s-icon {
+        i {
+            font-size: 2.2rem;
+            color: $dark2;
+        }
+    }
+    .context {
+        .title {
+            color: $dark2;
+        }
+        .description {
+            font-size: 14px;
+            color: gray;
+        }
+    }
+}
+
+// Store setup
+
+#storeSetupForm {
+    .form-control {
+        font-size: 14px;
+    }
+}
+
+.location-list {
+    .bullet {
+        height: 30px;
+        width: 30px;
+        background-color: $secondary;
+        border-radius: 50%;
+    }
+}
+
+
+// Preferences
+.browse {
+    border: 1px dashed;
+    p {
+        color: gray;
+    }
+    .br-1 {
+        border-right: 1px dashed;
+    }
+}
+
+
+// Issue Gift Card
+.upload {
+    height: 10rem;
+    padding: 1rem;
+    border: 1px dashed;
+    border-radius: .25rem;
+}
